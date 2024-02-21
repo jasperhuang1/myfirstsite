@@ -1,0 +1,63 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  position: fixed; /* Changed to fixed to ensure it stays at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Ensure header is above video */
+}
+
+.header h1, .header h2 {
+  margin: 10px 0;
+}
+
+#landingVideo {
+  width: 30%; /* Adjust based on your preference */
+  border: 5px solid #fff;
+  position: absolute; /* Ensures video positioning is independent */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigateButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  z-index: 2; /* Ensure button is above video */
+}
+
+.content-section p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto; /* Adds space around the text */
+}
+
+.content-section {
+  padding-top: 900px; /* Adjust this value as needed */
+}
+
+.content-section img {
+  display: block; /* Makes image block level to take its own line */
+  max-width: 50%; /* Ensures image is responsive and fits within its container */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0 auto 20px; /* Centers image and adds space around it */
+}

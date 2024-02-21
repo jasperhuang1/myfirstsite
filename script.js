@@ -1,0 +1,1 @@
+document.getElementById('landingVideo').play();

@@ -12,14 +12,28 @@
   <p>He can dance.</p>
   <img src="rick astley dancing.png" alt="Rick Astley Dancing">
   
-  <p>He can sing.</p>
-  <img src="rick astley singing.png" alt="Rick Astley Singing">
+  <div class="button-container">
+    <button id="playAudio">He can sing.</button>
+  </div>
   
+  <img src="rick astley singing.png" alt="Rick Astley Singing">
   <p>But most of all, he will never tell a lie and hurt you.</p>
   <img src="rick astley thumbsup.png" alt="Rick Astley Thumbs Up">
 </div>
 
+<audio id="songAudio">
+  <source src="never gonna.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
 <a href="index.html" class="navigateButton">Back to Landing Page</a>
+
+<script>
+document.getElementById('playAudio').addEventListener('click', function () {
+  var audio = document.getElementById('songAudio');
+  audio.play();
+});
+</script>
 
 </body>
 </html>
